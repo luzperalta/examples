@@ -1,0 +1,7 @@
+{
+    "runtime": {
+        "majorVersion": "8"
+    },
+    "command": "java -jar EmployeeRESTApp-1.0.jar",
+    "notes": "Employee Spring Boot Web Service"
+}
