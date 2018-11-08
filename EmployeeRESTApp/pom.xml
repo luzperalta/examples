@@ -71,6 +71,7 @@
                     <finalName>${project.build.finalName}-dist</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
+							
                 <executions>
                     <execution>
                         <id>make-assembly</id>
@@ -85,12 +86,14 @@
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+				
                 <executions>
                     <execution>
                         <id>copy-dockerfile</id>
                         <phase>process-resources</phase>
-                        <goals>
+                        <goals>						    
                             <goal>copy-resources</goal>
+							
                         </goals>
                         <configuration>
                             <outputDirectory>${project.build.directory}</outputDirectory>
